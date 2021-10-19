@@ -1,5 +1,5 @@
 # Demo 2
-test from VS Code
+test from
 
 # Demo 3
-test from bash
+test from VS
