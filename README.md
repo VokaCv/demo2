@@ -10,3 +10,5 @@ az ad sp create-for-rbac --name "myApp" --role contributor \
 from your terminal. 
 
 and copy this into git repo/settings/secrets/AZURE_CREDENTIALS
+
+upload to git
