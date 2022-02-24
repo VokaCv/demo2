@@ -1,0 +1,20 @@
+
+name: Connect to Azure 
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+
+jobs:
+ conect-demo:
+  runs-on: ubuntu-latest
+  steps:
+    
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    - run: |
+        az group list
