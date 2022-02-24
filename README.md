@@ -1,8 +1,12 @@
-# Text from master branch
-some description
+# Test Connect to Azure Cloud
 
-# On the branch
-some text for debugging
+get secrets credentials by running 
 
-# Again from master 
-nothing to say
+az ad sp create-for-rbac --name "myApp" --role contributor \
+                            --scopes /subscriptions/{subscription-id}/resourceGroups/{resource-group} \
+                            --sdk-auth
+
+
+from your terminal. 
+
+and copy this into git repo/secrets/AZURE_CREDENTIALS
